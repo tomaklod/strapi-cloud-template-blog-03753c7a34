@@ -1,2 +1,12 @@
-import { factories } from '@strapi/strapi';
-export default factories.createCoreRouter('api::pricing.pricing');
+export default {
+  routes: [
+    {
+      method: 'GET',
+      path: '/pricing',
+      handler: 'pricing.find',
+      config: {
+        auth: false,
+      },
+    },
+  ],
+};

@@ -1,2 +1,12 @@
-import { factories } from '@strapi/strapi';
-export default factories.createCoreRouter('api::dashboard.dashboard');
+export default {
+  routes: [
+    {
+      method: 'GET',
+      path: '/dashboard',
+      handler: 'dashboard.find',
+      config: {
+        auth: false,
+      },
+    },
+  ],
+};

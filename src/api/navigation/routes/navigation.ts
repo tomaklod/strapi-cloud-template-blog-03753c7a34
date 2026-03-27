@@ -1,2 +1,12 @@
-import { factories } from '@strapi/strapi';
-export default factories.createCoreRouter('api::navigation.navigation');
+export default {
+  routes: [
+    {
+      method: 'GET',
+      path: '/navigation',
+      handler: 'navigation.find',
+      config: {
+        auth: false,
+      },
+    },
+  ],
+};

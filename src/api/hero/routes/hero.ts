@@ -1,2 +1,12 @@
-import { factories } from '@strapi/strapi';
-export default factories.createCoreRouter('api::hero.hero');
+export default {
+  routes: [
+    {
+      method: 'GET',
+      path: '/hero',
+      handler: 'hero.find',
+      config: {
+        auth: false,
+      },
+    },
+  ],
+};

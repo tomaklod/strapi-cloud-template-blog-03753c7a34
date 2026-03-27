@@ -1,2 +1,12 @@
-import { factories } from '@strapi/strapi';
-export default factories.createCoreRouter('api::footer.footer');
+export default {
+  routes: [
+    {
+      method: 'GET',
+      path: '/footer',
+      handler: 'footer.find',
+      config: {
+        auth: false,
+      },
+    },
+  ],
+};

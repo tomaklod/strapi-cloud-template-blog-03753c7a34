@@ -1,2 +1,12 @@
-import { factories } from '@strapi/strapi';
-export default factories.createCoreRouter('api::feature.feature');
+export default {
+  routes: [
+    {
+      method: 'GET',
+      path: '/feature',
+      handler: 'feature.find',
+      config: {
+        auth: false,
+      },
+    },
+  ],
+};

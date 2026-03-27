@@ -1,2 +1,12 @@
-import { factories } from '@strapi/strapi';
-export default factories.createCoreRouter('api::showcase.showcase');
+export default {
+  routes: [
+    {
+      method: 'GET',
+      path: '/showcase',
+      handler: 'showcase.find',
+      config: {
+        auth: false,
+      },
+    },
+  ],
+};
