@@ -1,0 +1,8 @@
+{
+  "collectionName": "components_slide_image_slide_images",
+  "info": { "displayName": "SlideImage", "icon": "picture" },
+  "attributes": {
+    "src": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "alt": { "type": "string" }
+  }
+}

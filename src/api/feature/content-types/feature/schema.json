@@ -1,0 +1,12 @@
+{
+  "kind": "singleType",
+  "collectionName": "features_sections",
+  "info": { "singularName": "feature", "pluralName": "features", "displayName": "Features" },
+  "options": { "draftAndPublish": true },
+  "attributes": {
+    "title": { "type": "string" },
+    "subtitle": { "type": "string" },
+    "cards": { "type": "component", "repeatable": true, "component": "feature-card.feature-card" },
+    "themes": { "type": "component", "repeatable": true, "component": "theme.theme" }
+  }
+}

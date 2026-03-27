@@ -1,0 +1,13 @@
+{
+  "kind": "singleType",
+  "collectionName": "dashboards",
+  "info": { "singularName": "dashboard", "pluralName": "dashboards", "displayName": "Dashboard" },
+  "options": { "draftAndPublish": true },
+  "attributes": {
+    "title": { "type": "string" },
+    "subtitle": { "type": "text" },
+    "images": { "type": "component", "repeatable": true, "component": "slide-image.slide-image" },
+    "backgroundImage": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "features": { "type": "component", "repeatable": true, "component": "shared.feature" }
+  }
+}

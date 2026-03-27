@@ -1,0 +1,9 @@
+{
+  "collectionName": "components_feature_card_feature_cards",
+  "info": { "displayName": "FeatureCard", "icon": "apps" },
+  "attributes": {
+    "title": { "type": "string", "required": true },
+    "description": { "type": "text" },
+    "backgroundImage": { "type": "media", "multiple": false, "allowedTypes": ["images"] }
+  }
+}

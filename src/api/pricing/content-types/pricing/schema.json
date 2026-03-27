@@ -1,0 +1,16 @@
+{
+  "kind": "singleType",
+  "collectionName": "pricings",
+  "info": { "singularName": "pricing", "pluralName": "pricings", "displayName": "Pricing" },
+  "options": { "draftAndPublish": true },
+  "attributes": {
+    "title": { "type": "string" },
+    "subtitle": { "type": "text" },
+    "plan": { "type": "string" },
+    "price": { "type": "string" },
+    "priceLabel": { "type": "string" },
+    "features": { "type": "component", "repeatable": true, "component": "pricing-feature.pricing-feature" },
+    "cta": { "type": "string" },
+    "ctaLink": { "type": "string" }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "kind": "singleType",
+  "collectionName": "showcases",
+  "info": { "singularName": "showcase", "pluralName": "showcases", "displayName": "Showcase" },
+  "options": { "draftAndPublish": true },
+  "attributes": {
+    "title": { "type": "string" },
+    "subtitle": { "type": "text" },
+    "phoneImage": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "backgroundImage": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "features": { "type": "component", "repeatable": true, "component": "shared.feature" }
+  }
+}

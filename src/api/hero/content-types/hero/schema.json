@@ -1,0 +1,14 @@
+{
+  "kind": "singleType",
+  "collectionName": "heroes",
+  "info": { "singularName": "hero", "pluralName": "heroes", "displayName": "Hero" },
+  "options": { "draftAndPublish": true },
+  "attributes": {
+    "title": { "type": "string", "required": true },
+    "subtitle": { "type": "text" },
+    "cta": { "type": "string" },
+    "ctaLink": { "type": "string" },
+    "backgroundImage": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "phoneMockup": { "type": "media", "multiple": false, "allowedTypes": ["images"] }
+  }
+}

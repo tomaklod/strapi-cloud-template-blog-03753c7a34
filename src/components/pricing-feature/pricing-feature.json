@@ -1,0 +1,7 @@
+{
+  "collectionName": "components_pricing_feature_pricing_features",
+  "info": { "displayName": "PricingFeature", "icon": "check" },
+  "attributes": {
+    "text": { "type": "string", "required": true }
+  }
+}

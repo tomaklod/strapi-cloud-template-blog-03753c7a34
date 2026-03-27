@@ -1,0 +1,8 @@
+{
+  "collectionName": "components_theme_themes",
+  "info": { "displayName": "Theme", "icon": "paint" },
+  "attributes": {
+    "name": { "type": "string", "required": true },
+    "image": { "type": "media", "multiple": false, "allowedTypes": ["images"] }
+  }
+}

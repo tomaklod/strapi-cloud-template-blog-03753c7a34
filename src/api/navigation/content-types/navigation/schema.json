@@ -1,0 +1,14 @@
+{
+  "kind": "singleType",
+  "collectionName": "navigations",
+  "info": { "singularName": "navigation", "pluralName": "navigations", "displayName": "Navigation" },
+  "options": { "draftAndPublish": false },
+  "attributes": {
+    "loginText": { "type": "string" },
+    "loginLink": { "type": "string" },
+    "ctaText": { "type": "string" },
+    "ctaLink": { "type": "string" },
+    "logoIcon": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "logoText": { "type": "media", "multiple": false, "allowedTypes": ["images"] }
+  }
+}
