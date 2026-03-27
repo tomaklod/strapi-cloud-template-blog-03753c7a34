@@ -1,8 +1,2 @@
-export default {
-  type: 'content-api',
-  routes: [
-    { method: 'GET', path: '/showcase', handler: 'showcase.find' },
-    { method: 'PUT', path: '/showcase', handler: 'showcase.update' },
-    { method: 'DELETE', path: '/showcase', handler: 'showcase.delete' },
-  ],
-};
+import { factories } from '@strapi/strapi';
+export default factories.createCoreRouter('api::showcase.showcase');

@@ -1,8 +1,2 @@
-export default {
-  type: 'content-api',
-  routes: [
-    { method: 'GET', path: '/pricing', handler: 'pricing.find' },
-    { method: 'PUT', path: '/pricing', handler: 'pricing.update' },
-    { method: 'DELETE', path: '/pricing', handler: 'pricing.delete' },
-  ],
-};
+import { factories } from '@strapi/strapi';
+export default factories.createCoreRouter('api::pricing.pricing');
