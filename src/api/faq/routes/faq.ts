@@ -1,9 +1,10 @@
 export default {
+  type: 'content-api',
   routes: [
     {
       method: 'GET',
       path: '/faq',
-      handler: 'faq.find',
+      handler: 'api::faq.faq.find',
       config: {
         auth: false,
       },

@@ -1,9 +1,10 @@
 export default {
+  type: 'content-api',
   routes: [
     {
       method: 'GET',
       path: '/pricing',
-      handler: 'pricing.find',
+      handler: 'api::pricing.pricing.find',
       config: {
         auth: false,
       },

@@ -1,9 +1,10 @@
 export default {
+  type: 'content-api',
   routes: [
     {
       method: 'GET',
       path: '/feature',
-      handler: 'feature.find',
+      handler: 'api::feature.feature.find',
       config: {
         auth: false,
       },

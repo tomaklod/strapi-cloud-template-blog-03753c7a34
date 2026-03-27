@@ -1,9 +1,10 @@
 export default {
+  type: 'content-api',
   routes: [
     {
       method: 'GET',
       path: '/navigation',
-      handler: 'navigation.find',
+      handler: 'api::navigation.navigation.find',
       config: {
         auth: false,
       },

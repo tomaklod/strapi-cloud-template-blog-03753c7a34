@@ -1,9 +1,10 @@
 export default {
+  type: 'content-api',
   routes: [
     {
       method: 'GET',
       path: '/dashboard',
-      handler: 'dashboard.find',
+      handler: 'api::dashboard.dashboard.find',
       config: {
         auth: false,
       },
