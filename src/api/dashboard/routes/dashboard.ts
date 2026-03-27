@@ -1,13 +1,6 @@
-export default {
-  type: 'content-api',
-  routes: [
-    {
-      method: 'GET',
-      path: '/dashboard',
-      handler: 'api::dashboard.dashboard.find',
-      config: {
-        auth: false,
-      },
-    },
-  ],
-};
+import { factories } from '@strapi/strapi';
+export default factories.createCoreRouter('api::dashboard.dashboard', {
+  config: {
+    find: { auth: false },
+  },
+});

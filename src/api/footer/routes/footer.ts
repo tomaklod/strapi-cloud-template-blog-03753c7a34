@@ -1,13 +1,6 @@
-export default {
-  type: 'content-api',
-  routes: [
-    {
-      method: 'GET',
-      path: '/footer',
-      handler: 'api::footer.footer.find',
-      config: {
-        auth: false,
-      },
-    },
-  ],
-};
+import { factories } from '@strapi/strapi';
+export default factories.createCoreRouter('api::footer.footer', {
+  config: {
+    find: { auth: false },
+  },
+});

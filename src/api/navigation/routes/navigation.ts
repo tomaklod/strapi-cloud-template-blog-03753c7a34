@@ -1,13 +1,6 @@
-export default {
-  type: 'content-api',
-  routes: [
-    {
-      method: 'GET',
-      path: '/navigation',
-      handler: 'api::navigation.navigation.find',
-      config: {
-        auth: false,
-      },
-    },
-  ],
-};
+import { factories } from '@strapi/strapi';
+export default factories.createCoreRouter('api::navigation.navigation', {
+  config: {
+    find: { auth: false },
+  },
+});

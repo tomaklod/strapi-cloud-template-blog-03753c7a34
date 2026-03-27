@@ -1,13 +1,6 @@
-export default {
-  type: 'content-api',
-  routes: [
-    {
-      method: 'GET',
-      path: '/feature',
-      handler: 'api::feature.feature.find',
-      config: {
-        auth: false,
-      },
-    },
-  ],
-};
+import { factories } from '@strapi/strapi';
+export default factories.createCoreRouter('api::feature.feature', {
+  config: {
+    find: { auth: false },
+  },
+});

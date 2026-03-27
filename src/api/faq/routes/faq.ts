@@ -1,13 +1,6 @@
-export default {
-  type: 'content-api',
-  routes: [
-    {
-      method: 'GET',
-      path: '/faq',
-      handler: 'api::faq.faq.find',
-      config: {
-        auth: false,
-      },
-    },
-  ],
-};
+import { factories } from '@strapi/strapi';
+export default factories.createCoreRouter('api::faq.faq', {
+  config: {
+    find: { auth: false },
+  },
+});

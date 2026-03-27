@@ -1,13 +1,6 @@
-export default {
-  type: 'content-api',
-  routes: [
-    {
-      method: 'GET',
-      path: '/pricing',
-      handler: 'api::pricing.pricing.find',
-      config: {
-        auth: false,
-      },
-    },
-  ],
-};
+import { factories } from '@strapi/strapi';
+export default factories.createCoreRouter('api::pricing.pricing', {
+  config: {
+    find: { auth: false },
+  },
+});
